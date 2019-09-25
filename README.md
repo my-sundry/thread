@@ -8,8 +8,8 @@
 * linux
 * python 3.5.3
 * python库：
-	* tushare
-	* pandas 等，需要用的库，使用pip自行安装。
+>tushare
+>pandas等，需要用的库，使用pip自行安装。
 
 #  未来计划
 
