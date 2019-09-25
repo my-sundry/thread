@@ -17,7 +17,7 @@ df = df[df['cal_date'] == today]
 is_open = df['is_open'].tolist()[0]
 
 class Thread:
-    shutdown_signal = True   #退出信号
+    shutdown_signal = True   #退出程序信号
     def __init__(self,code,high,low):
         self.stock_code = code
         self.high_price_limit = high
@@ -44,7 +44,7 @@ class Thread:
         global shutdown_signal
         if self.shutdown_signal:
             if now < '15:31':
-                print('线程1执行!')
+                #print('线程1执行!')
                 global timer
                 timer = threading.Timer(10,self.time_control)
                 timer.start()
